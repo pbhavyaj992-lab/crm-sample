@@ -78,3 +78,10 @@ TypeScript, React, Next.js 14 (App Router), Tailwind CSS, Supabase
 (PostgreSQL, Auth, RLS), `@supabase/ssr` / `@supabase/supabase-js`.
 Built by Bhavya Patel — B.Tech Computer Science and Design, GCET Anand;
 Master of Business Analytics, Deakin University, GIFT City.
+
+## What I would do differently
+
+- The SQL was verified live on Supabase on 13 Nov 2026, but roles inside a tenant (owner / sales / viewer) are still not implemented. I would add a `profiles.role` column and per-operation RLS policies next.
+- There is no sign-up / sign-in UI. I would add an auth page so a demo user can sign in instead of being created in the Supabase dashboard.
+- The seed is run-once for activities and tasks (a second run duplicates them), and `contacts` and `tasks` have no `tenant_id` index. I would add `ON CONFLICT DO NOTHING` and the missing indexes.
+- Email sending, file uploads, audit logs and automated tests are all still missing. I would add the audit log first, since a CRM without a record of who changed what is hard to trust.
