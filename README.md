@@ -7,9 +7,11 @@ CRM; no code was copied from them, from ISHAN Detailing OS, or from any
 other product. Do not copy ISHAN code into this repo.
 
 > **Status: sample / demo — not production-ready.** The core flows work
-> end to end against a real Supabase project. Role-based access, email
-> sending, file uploads, audit logs and automated tests are not yet built
-> (see "Not yet implemented"). All seed data is fictional demo data.
+> end to end against a real Supabase project — verified live 13 Nov 2026
+> in demo project bhavya-demo-crm-marketplace (ref axvpeagvzpnjlkxbttho),
+> all checks passed. Role-based access, email sending, file uploads,
+> audit logs and automated tests are not yet built (see "Not yet
+> implemented"). All seed data is fictional demo data.
 
 ## What is implemented
 
@@ -69,18 +71,6 @@ npm run build                # production build (needs env vars set)
 - Email sending, calendar sync, file attachments, import/export (CSV)
 - Search, pagination beyond the latest rows, and automated tests
 - Audit log of who changed what
-
-## Internal pricing (INTERNAL ONLY — never publish on the portfolio)
-
-Planning prices for a client build based on this sample:
-
-- **Basic — ₹30,000:** leads, contacts, deals pipeline, tasks, one tenant, demo-data import, setup on the client's Supabase project
-- **Standard — ₹55,000:** everything in Basic, plus activities timeline, quotes, CSV import/export, email templates, 2 tenants / teams
-- **Premium — ₹85,000:** everything in Standard, plus roles and permissions, dashboards and reports, integrations (email/calendar), training and 30 days of support
-
-Prices are starting points for a quote; confirm scope and price with the
-client in writing before work starts. 50% advance is the usual pattern for
-custom builds (confirm per client).
 
 ## Tech
 
